@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.5/examples/checkout/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>MyCNF</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/form-validation.css" rel="stylesheet">
+    <link href="/static/css/cnf-out.css" rel="stylesheet">
+
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Auto MyCNF</h2>
+            <p class="lead">Below is an form to built `my.cnf` configure file for MySQL initialize.</p>
+        </div>
+
+        <div class="row">
+            <!-- data form -->
+            <div class="col-md-12 order-md-1">
+                <h4 class="mb-3">MyCNF</h4>
+                <form class="needs-validation" novalidate="">
+                    <hr class="mb-4">
+                    <h4 class="mb-3">General</h4>
+                    <div>{{ .html }}</div>          
+                </form>
+                <hr class="mb-4"/>
+                <input class="form-control" id="file-path" type="text" value='/tmp/my.cnf' />
+                <button id="generate" class="btn btn-primary btn-lg btn-block">
+                    Generate Configuration Data File
+                </button>
+            </div>
+        </div>
+
+        <hr class="mb-4">
+        <hr class="mb-4">
+
+        
+        <p id="output"></p>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2017-2020 SpicyChickenFLY</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://github.com/SpicyChickenFLY?tab=repositories">Github</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write(
+            '<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        )
+    </script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="static/js/vue.min.js"></script> -->
+    <!-- <script src="/static/js/form-validation.js"></script> -->
+    <script src="/static/js/cnf-out.js"></script>
+
+</body>
+
+</html>
